@@ -1,0 +1,6 @@
+set Stage := Raw Prod1 Prod2 Prod3 Market
+set Conversion := RawToProd Prod1ToMarket Prod1ToProd2 Prod1ToProd3
+
+
+
+LaborBound := 25,000

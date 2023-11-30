@@ -1,0 +1,38 @@
+set Thickness := 1MM 3MM 5MM 05MM;
+
+set MachineType := M1 M2 M3;
+
+param Minutes:
+        M1  M2  M3 :=
+1MM     5   8   9
+3MM     4   7   5 
+5MM     4   5   4
+05MM    6   10  6 ;
+
+param Revenue :=
+1MM     110
+3MM     90
+5MM     60
+05MM    100 ;
+
+param Cost :=
+1MM     30
+3MM     10
+5MM     10
+05MM    20 ;
+
+param MaxDemand :=
+1MM     400
+3MM     250
+5MM     200
+05MM    450 ;
+
+param MachineLimit :=
+M1      60
+M2      60
+M3      60 ;
+
+param MachineCost :=
+M1      25
+M2      25
+M3      35 ;
