@@ -1,0 +1,29 @@
+set Stage := Raw Prod1 Prod2 Prod3 Market;
+
+set Conversion :=   Supply RawToProd Prod1ToMarket Prod1ToProd2 Prod1ToProd3
+                    Prod2ToMarket Prod2ToProd3 Prod3ToMarket Consumption;
+
+param ConversionRate:
+                Raw  Prod1  Prod2  Prod3  Market :=
+Supply          1    0      0      0      0
+RawToProd      -1    3      1      0      0
+Prod1ToMarket   0   -1      0      0      1
+Prod1ToProd2    0   -3      2      0      0
+Prod1ToProd3    0   -2      0      1      0
+Prod2ToMarket   0    0     -1      0      1
+Prod2ToProd3    0    0     -4      3      0
+Prod3ToMarket   0    0      0     -1      1
+Consumption     0    0      0      0     -1;
+
+param:          Cost        Labor       Revenue     Max :=
+Supply          25          0           0           0
+RawToProd       0           2           0           0
+Prod1ToMarket   0           0           10          5000
+Prod1ToProd2    3           6           0           0
+Prod1ToProd3    4           6           0           0
+Prod2ToMarket   0           0           20          4000
+Prod2ToProd3    24          4           0           0
+Prod3ToMarket   0           0           30          3000
+Consumption     0           0           0           0;
+
+param LaborBound := 25000;
