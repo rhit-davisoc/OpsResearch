@@ -1,5 +1,5 @@
 #
-# Example 2.9 - Olivia Davis
+# Exercise 2.9 - Olivia Davis
 #
 # I confirm that all code is my own and is submitted according to the integrity policy of MA444
 #

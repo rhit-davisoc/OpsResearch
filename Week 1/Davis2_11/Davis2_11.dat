@@ -1,0 +1,33 @@
+set CandyType := Cinnamon RootBeer Grape;
+
+set BagType := B1 B2;
+
+param LowerPercentage:
+            B1      B2 :=
+Cinnamon   0.4      0.0 
+RootBeer   0.3      0.4
+Grape      0.15     0.2;
+
+param UpperPercentage:
+            B1      B2 :=
+Cinnamon   1.0      0.3 
+RootBeer   1.0      1.0
+Grape      0.30     1.0;
+
+param:  MinPerBag   MaxPerBag :=
+B1      75          100
+B2      50          75;
+
+param MaxCandyType :=
+Cinnamon    60
+RootBeer    75
+Grape       75;
+
+param CandyCost :=
+Cinnamon    0.01
+RootBeer    0.02
+Grape       0.015;
+
+param Revenue :=
+B1  0.03
+B2  0.025;
