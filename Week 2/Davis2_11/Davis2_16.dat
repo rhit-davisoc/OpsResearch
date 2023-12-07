@@ -1,0 +1,28 @@
+set StoreType := Womens Childrens Shoe Electronic Jewelry Book;
+
+set StoreGroup := ClothingGroup BookGroup;
+
+param:      MinSpace   MaxSpace    Cost    Profit :=
+Womens      1500       6500        120     50
+Childrens   750        5000        100     30
+Shoe        800        3000        80      70
+Electronic  1000       4000        150     50
+Jewelry     1000       5000        75      90
+Book        1000       4000        90      60;
+
+param IsInGroup:
+            ClothingGroup   BookGroup  :=
+Womens      1               0
+Childrens   1               0
+Shoe        0               0
+Electronic  0               0
+Jewelry     0               0
+Book        0               1;
+
+param:               MinPercent  MaxPercent :=
+ClothingGroup        0.45        1
+BookGroup            0           0.15;
+
+param Budget := 25000000;
+
+param RetailSpace := 15000;
