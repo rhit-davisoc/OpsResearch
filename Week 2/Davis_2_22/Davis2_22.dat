@@ -1,0 +1,26 @@
+param NumMonths := 6 ;
+
+param Demand :=
+1   6000
+2   5000
+3   8000
+4   4000
+5   7000
+6   5000 ;
+
+param Labor := 20 ;
+
+param HoursPerMonth := 200 ;
+param OvertimePerMonth := 40 ;
+
+param Salary := 3000 ;
+param Overtime := 75 ;
+
+param HireCost := 2000 ;
+param FireCost := 3000 ;
+
+param MaxInventory := 3000 ;
+param StorageCost := 5 ;
+
+param InitWorkers := 15 ;
+param InitSneakers := 1000 ;
