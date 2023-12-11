@@ -46,7 +46,7 @@ def EnsureCostLimit(M):
 M.TotalCost = Constraint(rule=EnsureCostLimit)
 
 def EnsureRetailSpaceLimit(M):
-   return sum(M.StoreSpace[s] for s in M.StoreType) <= M.RetailSpace
+   return M.TotStoreSpace <= M.RetailSpace
 M.RetailSpaceLimit = Constraint(rule=EnsureRetailSpaceLimit)
 
 def EnsureLowerSpaceLimit(M,s):

@@ -1,5 +1,5 @@
 #
-# Exercise 2.16 - Olivia Davis
+# Exercise 2.22 - Olivia Davis
 #
 # I confirm that all code is my own and is submitted according to the integrity policy of MA444
 #
@@ -29,29 +29,6 @@ M.MaxInventory = Param(within=NonNegativeReals)
 M.StorageCost = Param(within=NonNegativeReals)
 M.InitWorkers = Param(within=NonNegativeIntegers)
 M.InitSneakers = Param(within=NonNegativeIntegers)
-
-
-# All demand must be met during that month. Each sneaker is made by
-# workers and requires 20 minutes per pair.  [v]
-# 
-# Each worker works 200 hours
-# per month and can work up to 40 hours of overtime per month. Workers
-# are paid a salary of $3000 per month, plus $75 per hour of overtime. [v]
-
-# Prior to each month’s production, Fitness Sneaker can either hire
-# additional workers or lay off some of its current workers. Due to
-# administrative and other expenses, it costs $2000 to hire a worker and
-# $3000 to fire a worker.  [v]
-# 
-# Currently, at most 3000 pairs of sneakers can be
-# stored in inventory, and this number is calculated at the end of the month
-# (after all production). [v]
-# 
-# Each stored pair costs $5 per month in storage fees. [v]
-
-# If there are 15 workers and 1000 pairs of sneakers in storage at the
-# beginning of month 1, determine how Fitness Sneaker can minimize its
-# cost of meeting the demand. [v]
 
 # Variables
 M.SneakerProd = Var(M.Month, within=NonNegativeIntegers)
